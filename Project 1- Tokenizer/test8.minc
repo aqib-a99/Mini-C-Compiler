@@ -1,0 +1,15 @@
+
++ - * /
+< > = <> <= >=
+:: := ( ) ; ,
+begin end int print function if then else while
+
+function main()
+begin function 
+    a = 1.234;
+    if a<=2<b==c>NaN_ begin
+       
+    end
+    _NaN = 1.23.4;
+end
+

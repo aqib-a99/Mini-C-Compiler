@@ -1,0 +1,6 @@
+main()
+begin
+	if(AB>=b)
+		print x;
+    b = .3;
+}

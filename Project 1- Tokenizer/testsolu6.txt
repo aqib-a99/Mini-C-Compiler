@@ -1,0 +1,16 @@
+<ID, token-attr:"main", lineno:1, column:1>
+<LPAREN, token-attr:"(", lineno:1, column:5>
+<RPAREN, token-attr:")", lineno:1, column:6>
+<BEGIN, token-attr:"begin", lineno:2, column:1>
+<IF, token-attr:"if", lineno:3, column:2>
+<LPAREN, token-attr:"(", lineno:3, column:4>
+<ID, token-attr:"AB", lineno:3, column:5>
+<RELOP, token-attr:">=", lineno:3, column:7>
+<ID, token-attr:"b", lineno:3, column:9>
+<RPAREN, token-attr:")", lineno:3, column:10>
+<PRINT, token-attr:"print", lineno:4, column:3>
+<ID, token-attr:"x", lineno:4, column:9>
+<SEMI, token-attr:";", lineno:4, column:10>
+<ID, token-attr:"b", lineno:5, column:5>
+<RELOP, token-attr:"=", lineno:5, column:7>
+Error! There is a lexical error at line 5 and column 9.
