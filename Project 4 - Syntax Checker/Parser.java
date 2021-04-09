@@ -134,7 +134,7 @@ public class Parser
                 throw new Exception("\"RELOP\"" + " is expected instead of " + "\"" + yylval.obj.toString() + "\" at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
              
             else if(token_type == EXPROP || token_type == EXPROP || token_type == TERMOP || token_type == BOOL_LIT || token_type == INT_LIT)
-                throw new Exception("Incorrect expression at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+                throw new Exception("Incorrect expression at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
             
             else if(token_type == SEMI)
                 throw new Exception("\";\"" + " is expected instead of " + "\"" + yylval.obj.toString() + "\" at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
@@ -283,7 +283,7 @@ public class Parser
                 return null;
         }
             
-        throw new Exception("Incorrect type specification at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+        throw new Exception("Incorrect type specification at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
     }
 
 
@@ -412,7 +412,7 @@ public class Parser
                 return null;
         }
 
-        throw new Exception("Incorrect statement at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+        throw new Exception("Incorrect statement at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
     }
 
     // 12. stmt_list_
@@ -454,7 +454,7 @@ public class Parser
 
         }
 
-        throw new Exception("Incorrect statement at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+        throw new Exception("Incorrect statement at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
     }
 
     // 13. stmt
@@ -608,7 +608,7 @@ public class Parser
 
         }
 
-        throw new Exception("Incorrect declaration of a local variable at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+        throw new Exception("Incorrect declaration of a local variable at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
     }
 
     // 20. local_decls_
@@ -756,7 +756,7 @@ public class Parser
 
         }
 
-        throw new Exception("Incorrect argument format at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+        throw new Exception("Incorrect argument format at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
     }
 
     // 24. expr
@@ -790,7 +790,7 @@ public class Parser
                 return null;
         }
 
-        throw new Exception("Incorrect expression at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+        throw new Exception("Incorrect expression at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
     }
 
     // 24. expr
@@ -865,7 +865,7 @@ public class Parser
             return null;
     }
 
-    throw new Exception("Incorrect expression at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+    throw new Exception("Incorrect expression at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
 }
 
 
@@ -997,7 +997,7 @@ public class Parser
 
     }
 
-    throw new Exception("Incorrect expression at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()));
+    throw new Exception("Incorrect expression at " + _lexer.line + ":" + (_lexer.column - yylval.obj.toString().length()) + ".");
 }
     
 }
